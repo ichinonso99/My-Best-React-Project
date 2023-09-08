@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* This is for footer */
+    .footer {
+        display: block !important;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* this is about section */
+    .about img{
+        width: 350px !important;
+    }
+    /* this is FilterProducts section */
+    .FilterProducts{
+        margin: auto !important; 
+        margin-top: 30px !important;
+    }
+    /* this is TrendingProducts section */
+    .TrendingProducts{
+        margin: auto !important; 
+        margin-top: 30px !important;
+    }
+    
+    /* this is ProductDetails section */
+    .ProductDetails2{
+        margin: auto !important; 
+    }
+    .ProductDetails img{
+        width: 350px !important;
+    }
+    .Details{
+        margin-left: 5px !important;
+        margin-bottom: 20px !important;
+    }
+    .view{
+        margin-left: 20% !important;
+        display: flex !important;
+    }
+    .view .go{
+        height: 40px !important;
+        margin-top: 25px !important;
+        background: none !important;
+    }
+    .view .cart{
+        background: none !important;
+        color: black !important;
+    }
+
+    /* this is header  or navbar section */
+    .Header1{
+        width: 90px !important; 
+        height: 40px !important; 
+    }
+    .Header2{
+        /* width: 150px !important;  */
+        height: 40px !important; 
+    }
+
+}

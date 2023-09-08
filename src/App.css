@@ -1,0 +1,18 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar-brand{
+  font-family: 'Combo', cursive !important;
+  font-size: 1.2rem !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.navbar-brand span{
+  color: goldenrod !important;
+}
+.nav-ul{
+  align-items: center !important;
+}
+
+
