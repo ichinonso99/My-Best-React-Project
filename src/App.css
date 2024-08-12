@@ -7,6 +7,7 @@
   font-size: 1.2rem !important;
   color: white !important;
   font-weight: bold !important;
+  font-size: 30px !important;
 }
 .navbar-brand span{
   color: goldenrod !important;
@@ -14,5 +15,74 @@
 .nav-ul{
   align-items: center !important;
 }
+
+/* navbar sticky section */
+.sticky {
+  position: sticky !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  background-color: #fff;
+  z-index: 100;
+}
+
+/* for navbar2.................. */
+/* 
+.menu {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu  ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+  justify-content: space-between;
+  border-left: 1px solid orange;
+  position: relative;
+}
+
+.menu  ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu  ul li:hover {
+  background-color: green;
+}
+
+.menu  ul li::after {
+  content: "";
+  height: 5%;
+  position: absolute;
+  left: 0;
+  background-color: aqua;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu  ul li:hover::after {
+  width: 100%;
+} */
+/* ..................................header */
+.Heder3{
+  text-decoration: none !important;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+.header{
+  width: 70%;
+  margin: auto;
+}
+
+  /* payload section where some items are hidden*/
+ .tt{
+  display: none;
+}
+
+
+
 
 

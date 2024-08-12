@@ -4,7 +4,6 @@ import Swal from 'sweetalert';
 import whatssap from "../Component/images/whatssap.png";
 import fb from "../Component/images/fb.png";
 import youtube from "../Component/images/youtube.png";
-import LogIn from './LogIn';
 
 function Contact() {
   const navigate = useNavigate()
@@ -17,6 +16,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwords, setPasswords] = useState('');
+
 
   // Create a function called handleSubmit
   const handleSubmit = () => {
@@ -33,16 +33,16 @@ function Contact() {
       setShowSuccess(false)
       // alert("Please confirm your password")
       Swal("Empty Fields", "Please fill the required field", "error");
-      setTimeout(() => {
-        navigate("/LogIn")
-      }, 2000);
+      // setTimeout(() => {
+      //   navigate("/logIn")
+      // }, 2000);
     }
     else {
       // function to save user details in local storage
       let user = {
         username: username,
         email: email,
-        password: password
+        password: password,
       }
       localStorage.setItem("users", JSON.stringify(user))
 
@@ -51,16 +51,15 @@ function Contact() {
       setShowSuccess(true)
       setShowError(false)
 
-      setTimeout(() => {
-        navigate("/LogIn")
-      }, 2000);
+        navigate("/logIn")
     }
   }
 
 
   return (
-    <div className='container mt-5'>
+    <div className='container mt-2'>
       <div className='row justify-content-center'>
+      <p style={{ background: 'green', textAlign: 'center', color: 'white', fontSize:"24px" }}>Please SignUp Before Checkout</p>
         <div className='col-md-5 shadow p-3 mb-5 bg-body rounded'>
           {showSuccess && (
             <div class="alert alert-success" role="alert">
@@ -104,7 +103,7 @@ function Contact() {
             </div>
             <div style={{ textAlign: 'center' }}>
               <p class="link mt-3">Already have an acccount?</p>
-              <Link to={"/logIn"} style={{ textAlign: 'center' }}>LogIn </Link> here
+              <Link to={"/logIn"}  onClick={()=> navigate(`logIn`)} style={{ textAlign: 'center' }}>LogIn </Link> here
             </div>
 
 {/* the social media section, like facebook, youtube and etc */}

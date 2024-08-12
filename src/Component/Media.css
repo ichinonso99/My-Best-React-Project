@@ -14,53 +14,111 @@
     }
 
     /* this is about section */
-    .about img{
-        width: 350px !important;
+    .about img {
+        width: 18rem !important;
     }
+
     /* this is FilterProducts section */
-    .FilterProducts{
-        margin: auto !important; 
+    .FilterProducts {
+        margin: auto !important;
         margin-top: 30px !important;
     }
+
     /* this is TrendingProducts section */
-    .TrendingProducts{
-        margin: auto !important; 
+    .TrendingProducts {
+        margin: auto !important;
         margin-top: 30px !important;
     }
-    
+
     /* this is ProductDetails section */
-    .ProductDetails2{
-        margin: auto !important; 
+    .ProductDetails2 {
+        margin: auto !important;
     }
-    .ProductDetails img{
-        width: 350px !important;
+
+    .ProductDetails img {
+        width: 330px !important;
     }
-    .Details{
+
+    .Details {
         margin-left: 5px !important;
         margin-bottom: 20px !important;
     }
-    .view{
+
+    .view {
         margin-left: 20% !important;
         display: flex !important;
     }
-    .view .go{
+
+    .view .go {
         height: 40px !important;
         margin-top: 25px !important;
         background: none !important;
     }
-    .view .cart{
+
+    .view .cart {
         background: none !important;
         color: black !important;
     }
 
     /* this is header  or navbar section */
-    .Header1{
-        width: 90px !important; 
-        height: 40px !important; 
+    .Header1 {
+        margin: auto !important;
+        text-align: center !important;
+        color: none !important;
+        width: 200px !important;
+        height: 40px !important;
     }
-    .Header2{
-        /* width: 150px !important;  */
-        height: 40px !important; 
+
+    /* This is navbarr2 section */
+    .Navbarr2 {
+        display: none !important;
+    }
+
+    .menu {
+        background-color: blue !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding-top: 20px !important;
+    }
+
+    .Header2 {
+        height: 40px !important;
+    }
+
+    /* ..................................header */
+    .Heder3 {
+        text-decoration: none !important;
+        margin-top: -5px !important;
+        display: flex;
+        margin-right: 10px !important;
+    }
+
+    /* payload section where some items are hidden*/
+    .th {
+        display: none;
+    }
+
+    th {
+        display: none;
+    }
+
+    /* payload section where some items are shown*/
+    .tt {
+        display: table;
+    }
+
+    /* section for videos */
+    .videoPlayer {
+        margin-left: 15%;
+    }
+    
+    /* section for cartlogo */
+    .cartlogo {
+        display: inline-block !important;
+    }
+    .cartlogos {
+        display: none !important;
     }
 
 }

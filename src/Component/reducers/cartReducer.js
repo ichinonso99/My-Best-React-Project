@@ -19,8 +19,17 @@ const cartReducer = (state = initialData, action) => {
     case "DELETE":
       return {
         ...state,
-        products: state.products.filter((delProduct) => delProduct !== action.payload)
+        products: state.products.filter((delProduct) => delProduct.id !== action.payload.id),
       };
+      case "UPDATE_CART":
+        return{
+          ...state,
+          products: state.products.map((cartItem)=>
+          cartItem.id === action.payload.id
+          ? { ...cartItem, quantity: action.payload.quantity}
+          : cartItem
+          ),
+        }; 
     default: {
       return state;
     }

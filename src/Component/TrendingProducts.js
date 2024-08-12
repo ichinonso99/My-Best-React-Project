@@ -1,5 +1,5 @@
 import React from 'react';
-import { data } from './TrendingData';
+import { data2 } from './TrendingData';
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import StarRating from './StarRating';
@@ -11,32 +11,18 @@ function TrendingProducts() {
 
   const dispatch = useDispatch();
 
-  // Create a function to addCart
-  function addCart(productId) {
-    const product = data.find((item) => item.id === productId);
-    if (product) {
-      dispatch({ type: "ADD", payload: product });
-      // alert('You just added' )
-    }
-  };
-
-  // use the find method to find if the user already added an item to the card
-  const isInCart = (productId) => {
-    return countobj.find((item) => item.id === productId)
-  }
-
-
   return (
+    <div className='mt-3'>
+        <h2 className='mt-5'>Trending Products</h2>
     <div className='container' >
-      <h2 className='mt-5'>Trending Products</h2>
       {/* <ScrollingText/> */}
-      <div className='row'>
-        {data.map((product) => {
-          console.log(data)
+      <div className='row justify-content-center'>
+        {data2.map((product) => {
+          console.log(data2)
           return (
             <div className='TrendingProducts col-md-4 shadow p-3 mb-6 bg-body rounded mt-3 m-2' style={{ width: "16rem" }} data-aos='zoom-in'>
               <div key={product.id}>
-                <Link to={`${product.id}`}>
+                <div to={`${product.id}`}>
                   <div className=''>
                     <img
                       src={product.image}
@@ -45,26 +31,18 @@ function TrendingProducts() {
 
                     />
                   </div>
-                </Link>
-                <h5 className='mt-4'>{product.title}</h5>
-                <h5>Price: ${product.price} <span className="text-danger"> &nbsp;<strike> ${product.price
+                </div>
+                <h5 className='mt-4'>{product.name}</h5>
+                <h5>${product.price} <span className="text-danger"> &nbsp;<strike> ${product.price
                   * 3}</strike></span> </h5>
                 <StarRating/>
-                {isInCart(product.id) ?
-                  (
-                    <button className='btn btn-primary p-1 m-4' disabled onClick={() => addCart(product.id)} style={{ cursor: "pointer" }}>ADD TO CART</button>
-                  ) :
-                  (
-                    <button className='btn btn-primary p-1 m-4' onClick={() => addCart(product.id)} style={{ cursor: "pointer" }}>ADD TO CART</button>
-                  )}
-                {/* <button className='btn btn-primary p-1 m-4' onClick={()=>addCart(product.id)} style={{cursor:"pointer"}}>ADD TO CART</button> */}
-                <Link to={`${product.id}`} className='btn btn-secondary'>VIEW</Link>
               </div>
             </div>
           );
         })}
       </div>
     </div>
+          </div>
   );
 
 }

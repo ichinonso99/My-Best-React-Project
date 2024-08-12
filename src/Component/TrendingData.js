@@ -1,96 +1,205 @@
-export const data = [
-    // {
-    //   category: "men's clothing",
-    //   description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-    //   id: 1,
-    //   image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-    //   price: 109.95,
-    //   rating: { rate: 3.9, count: 120 },
-    //   title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-    // },
-    // {
-    //   category: "men's clothing",
-    //   description: "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-    //   id: 2,
-    //   image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-    //   price: 22.3,
-    //   rating: { rate: 4.1, count: 259 },
-    //   title: "Mens Casual Premium Slim Fit T-Shirts ",
-  
-    // },
-    // {
-    //   category: "men's clothing",
-    //   description: "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-    //   id: 3,
-    //   image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-    //   price: 55.99,
-    //   rating: { rate: 4.7, count: 500 },
-    //   title: "Mens Cotton Jacket",
-    // },
-    // {
-    //   category: "men's clothing",
-    //   description: "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-    //   id: 4,
-    //   image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-    //   price: 15.99,
-    //   rating: { rate: 2.1, count: 430 },
-    //   title: "Mens Casual Slim Fit",
-    // },
-    // {
-    //   category: "jewelery",
-    //   description: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-    //   id: 5,
-    //   image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-    //   price: 695,
-    //   rating: { rate: 4.6, count: 400 },
-    //   title: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-    // },
+export const data1 = [
+  {
+      id: 25,
+      image: "/TrendingImage/pr1.jpg",
+      name: "Men's Adidas shirt",
+      price: 99,
+      brand: "Adidas",
+      status: 'In stock',
+      rate: '50% off'
+  },
+  {
+      id: 26,
+      image: "/TrendingImage/pr2.jpg",
+      name: "Boy's Nike Shirt",
+      price: 225,
+      brand: 'Nike',
+      status: 'In stock',
+      rate: '50% off'
+  },
+  {
+      id: 27,
+      image: "/TrendingImage/pr3.jpg",
+      name: "Cappuchino Designer's Shirt",
+      price: 500,
+      brand: 'Cappuchino',
+      status: 'In stock',
+      rate: '50% off'
+  },
+//   {
+//       id: 28,
+//       image: "/TrendingImage/pr4.jpg",
+//       name: "Nike 2010 T-shirt",
+//       price: 50,
+//       brand: 'chiffon',
+//       status: 'In stock',
+//       rate: '50% off'
+//   },
+//   {
+//       id: 29,
+//       image: "/TrendingImage/pr5.jpg",
+//       name: "Nike 2010 T-shirt",
+//       price: 250,
+//       brand: 'puma',
+//       status: 'In stock',
+//       rate: '50% off'
+//   },
+  {
+      id: 30,
+      image: "/TrendingImage/pr6.jpg",
+      name: "puma 2019 T-shirt",
+      price: 88,
+      brand: 'puma',
+      status: 'In stock',
+      rate: '50% off'
+  },
+  {
+      id: 31,
+      image: "/TrendingImage/pr7.jpg",
+      name: "Unisex Authentic Sweater",
+      price: 300,
+      brand: 'Puma',
+      status: 'In stock',
+      rate: '50% off'
+  },
+//   {
+//       id: 32,
+//       image: "/TrendingImage/pr8.jpg",
+//       name: "Nike Sweater",
+//       price: 90,
+//       brand: 'Nike',
+//   },
+//   {
+//       id: 33,
+//       image: "/TrendingImage/pro1.jpg",
+//       name: "Men's customized shirt",
+//       price: 100,
+//       brand: 'Levi',
+//   },
+  {
+      id: 34,
+      image: "/TrendingImage/pro2.jpg",
+      name: "Raph Lauren bottega Polo",
+      price: 100,
+      brand: 'Raph Lauren',
+  },
+  {
+      id: 35,
+      image: "/TrendingImage/pro3.jpg",
+      name: "Men cotton Classic T-shirt",
+      price: 98,
+      brand: 'MHM',
+  },
+  {
+      id: 36,
+      image: "/TrendingImage/pro4.jpg",
+      name: "Men's Sportwear",
+      price: 800,
+      brand: 'Under-Armour',
+  },
+//   {
+//       id: 37,
+//       image: "/TrendingImage/pro5.jpg",
+//       name: "Women's Sportwear 5 in one",
+//       price: 67,
+//       brand: 'Under-Armour',
+//   },
+//   {
+//       id: 38,
+//       image: "/TrendingImage/pro6.jpg",
+//       name: "Gucci boxers medium size",
+//       price: 1000,
+//       brand: 'Nike',
+//   },
+//   {
+//       id: 39,
+//       image: "/TrendingImage/pro7.jpg",
+//       name: "Cargo pants with ropes",
+//       price: 56,
+//       brand: 'Nike',
+//   },
+//   {
+//       id: 40,
+//       image: "/TrendingImage/pro8.jpg",
+//       name: "Lg Webos smart tv 55 inches with Magic remote airplay",
+//       price: 90,
+//       brand: 'LG',
+//   }
+];
 
-    // {
-    //   category: "electronics",
-    //   description: "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-    //   id: 6,
-    //   image: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-    //   price: 999.99,
-    //   rating: { rate: 2.2, count: 140 },
-    //   title: "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-    // },
-    // {
-    //   category: "women's clothing",
-    //   description: "Season: Spring,Summer,Autumn,Winter.",
-    //   id: 7,
-    //   image: "/image/women1.jpg",
-    //   price: 5.99,
-    //   rating: { rate: 1.6, count: 149 },
-    //   title: "Womens T Pants",
-    // },
-    // {
-    //   category: "women's clothing",
-    //   description: "Season: Spring,Summer,Autumn,Winter.",
-    //   id: 8,
-    //   image: "/image/women3.jpg",
-    //   price: 5.99,
-    //   rating: { rate: 18.6, count: 199 },
-    //   title: "Womens T Pants",
-    // },
-    // {
-    //   category: "men's clothing",
-    //   description: "Your perfect pack for everyday use and walks in the forest and rain.",
-    //   id: 9,
-    //   image: "/image/shoe1.jpg",
-    //   price: 5.99,
-    //   rating: { rate: 40.6, count: 199 },
-    //   title: "men slippers",
-    // },
-    {
-      category: "jewelery",
-      description: "Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-      id: 10,
+
+export const data2 = [
+  {
+      id: 41,
+      image: "/TrendingImage/img1.jpg",
+      name: "2023 Men's Shoe with strong sole and Faster grip",
+      price: 99,
+      brand: 'Champion',
+  },
+  {
+      id: 42,
+      image: "/TrendingImage/img2.jpg",
+      name: "32gb Flashdrive with OTG",
+      price: 65,
+      brand: 'Sandisk',
+      status: 'In Stock',
+      rate: '60% off'
+  },
+  {
+      id: 43,
+      image: "/TrendingImage/img3.jpg",
+      name: "Men's Slim-fit Joggers",
+      price: 87,
+      brand: 'Jordan',
+      status: 'In Stock',
+      rate: '60% off'
+  },
+//   {
+//       id: 44,
+//       image: "/TrendingImage/img4.jpg",
+//       name: "Nike Sneakers Black 2022",
+//       price: 85,
+//       brand: 'Nike',
+//       status: 'Out Of Stock',
+//       rate: 'Normal Rate'
+//   },
+//   {
+//       id: 45,
+//       image: "/TrendingImage/img5.jpg",
+//       name: "Adidas Predator boot Pink and black",
+//       price: 35,
+//       brand: 'Adidas',
+//       status: 'Out Of Stock',
+//       rate: 'Normal Rate',
+//   },
+//   {
+//       id: 46,
+//       image: "/TrendingImage/img6.jpg",
+//       name: "2023 Samsung Smart Tv 59 inches",
+//       price: 88,
+//       brand: 'Samsung',
+//   },
+//   {
+//       id: 47,
+//       image: "/TrendingImage/img7.jpg",
+//       name: "Play Station 5 with Dual Sense",
+//       price: 70,
+//       brand: 'Sony',
+//   },
+  {
+      id: 48,
+      image: "/TrendingImage/img8.jpg",
+      name: "2023 Microwave oven 1800 watt with 6 year warranty",
+      price: 99,
+      brand: 'Samsung',
+  },
+  {
+      id: 49,
       image: "/TrendingImage/ladies10.jpg",
+      name: "Solid Gold Petite Micropave ",
       price: 50,
-      rating: { rate: 38.6, count: 299 },
-      title: "Solid Gold Petite Micropave ",
+      brand: 'Nike',
+      rating: { rate: 38.6},
+
     },
-  
-  ]
-  
+];
